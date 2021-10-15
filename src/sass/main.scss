@@ -1,0 +1,46 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "mixins";
+@import "colors";
+@import "fonts";
+@import "buttons";
+@import "homepage";
+@import "footer";
+@import "nav";
+
+/* Global */
+h1,
+h2 {
+	font-family: $primary-font;
+	color: $brand-blue;
+}
+
+p,
+a {
+	font-family: $secondary-font;
+	color: $brand-blue-gray;
+	line-height: $line-height;
+}
+
+#logo img {
+	width: 75px;
+}
+
+/* Navigation */
+
+nav {
+	.nav {
+		.nav-item {
+			.nav-link {
+				color: $brand-blue-gray;
+			}
+		}
+	}
+}
+
+/* Wrappers */
+
+#hero-bg {
+	background: $brand-light-blue;
+}

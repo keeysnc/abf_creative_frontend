@@ -1,0 +1,7 @@
+@mixin top-caption {
+	text-transform: uppercase;
+	color: $brand-purple;
+	font-weight: $font-bold;
+	opacity: 0.3;
+	letter-spacing: 10px;
+}

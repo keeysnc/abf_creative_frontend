@@ -1,0 +1,42 @@
+/* Pill Buttons */
+@mixin pill-btn {
+	font-family: $secondary-font;
+	font-size: $font-size-btn;
+	background: $brand-green;
+	color: $brand-white;
+	border: none;
+	border-radius: 30px;
+	padding: 15px 35px;
+	font-weight: $font-bold;
+}
+
+.pill-btn {
+	@include pill-btn;
+}
+
+.pill-btn:hover {
+	@include pill-btn;
+	background: $brand-light-green;
+}
+
+/* Arrow Buttons */
+@mixin arrow-btn {
+	background: transparent;
+	font-family: $secondary-font;
+	font-size: $font-size-btn;
+	color: $brand-blue;
+	font-weight: $font-bold;
+	border: none;
+	border-radius: 30px;
+	padding: 15px 35px;
+}
+
+.arrow-btn {
+	@include arrow-btn;
+}
+
+.arrow-btn:hover {
+	@include arrow-btn;
+	background: transparent;
+	color: $brand-blue;
+}

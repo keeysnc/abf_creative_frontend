@@ -1,0 +1,54 @@
+/* Font Family*/
+$primary-font: "Poppins", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+
+/* Font Weights */
+$font-regular: 400;
+$font-bold: 700;
+
+/* Line Heights */
+$line-height: 1.875rem;
+
+/* Font Sizes */
+$font-size-h1: 40px;
+$font-size-h2: 32px;
+$font-size-h3: 24px;
+$font-size-p: 18px;
+$font-size-btn: 16px;
+$font-size-small: 14px;
+
+/* Font Media Queries */
+@include media-breakpoint-up(xs) {
+}
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+	h1 {
+		font-size: $font-size-h1;
+	}
+	h2 {
+		font-size: $font-size-h2;
+	}
+	p {
+		font-size: $font-size-p;
+	}
+	button {
+		font-size: $font-size-btn;
+	}
+}
+@include media-breakpoint-up(lg) {
+	h1 {
+		font-size: $font-size-h1;
+	}
+	h2 {
+		font-size: $font-size-h2;
+	}
+	p {
+		font-size: $font-size-p;
+	}
+	button {
+		font-size: $font-size-btn;
+	}
+}
+@include media-breakpoint-up(xl) {
+}
