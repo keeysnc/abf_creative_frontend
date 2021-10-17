@@ -64,9 +64,9 @@
 
 @mixin show-pagination-btn {
 	height: 50px;
-	width: 100px;
+	width: 120px;
 	background: white;
-	border: 2px solid $brand-green;
+	border: 1px solid $brand-green;
 	color: $brand-green;
 	border-radius: 10px;
 }

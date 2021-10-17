@@ -110,18 +110,18 @@
 /* Show Pagination Button */
 .show-pagination-btn {
   height: 50px;
-  width: 100px;
+  width: 120px;
   background: white;
-  border: 2px solid #4e766d;
+  border: 1px solid #4e766d;
   color: #4e766d;
   border-radius: 10px;
 }
 
 .show-pagination-btn:hover {
   height: 50px;
-  width: 100px;
+  width: 120px;
   background: white;
-  border: 2px solid #4e766d;
+  border: 1px solid #4e766d;
   color: #4e766d;
   border-radius: 10px;
 }
@@ -381,9 +381,9 @@ nav .nav .nav-item .nav-link {
 #show .show__pagination .show__pagination--previous,
 #show .show__pagination .show__pagination--next {
   height: 50px;
-  width: 100px;
+  width: 120px;
   background: white;
-  border: 2px solid #4e766d;
+  border: 1px solid #4e766d;
   color: #4e766d;
   border-radius: 10px;
 }
@@ -399,9 +399,9 @@ nav .nav .nav-item .nav-link {
 }
 #show .show__pagination ul li {
   height: 50px;
-  width: 100px;
+  width: 120px;
   background: white;
-  border: 2px solid #4e766d;
+  border: 1px solid #4e766d;
   color: #4e766d;
   border-radius: 10px;
   margin-right: 10px;
@@ -448,6 +448,7 @@ nav .nav .nav-item .nav-link {
   justify-content: space-around;
   position: absolute;
   bottom: 10px;
+  width: 100%;
 }
 #card .card__item .card__item-caption .card__item-caption-meta {
   color: #f6f7fb;
@@ -461,7 +462,6 @@ nav .nav .nav-item .nav-link {
   z-index: 99;
 }
 #card .card__item-caption-detail {
-  margin-left: 20px;
   width: 70px;
   height: 50px;
 }
