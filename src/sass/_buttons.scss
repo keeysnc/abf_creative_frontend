@@ -40,3 +40,41 @@
 	background: transparent;
 	color: $brand-blue;
 }
+
+/* Card Button */
+@mixin card-btn {
+	background: white;
+	font-family: $secondary-font;
+	font-size: $font-size-btn;
+	color: $brand-blue;
+	font-weight: $font-bold;
+	border: none;
+	border-radius: 10px;
+}
+
+.card-btn {
+	@include card-btn;
+}
+
+.card-btn:hover {
+	@include card-btn;
+}
+
+/* Show Pagination Button */
+
+@mixin show-pagination-btn {
+	height: 50px;
+	width: 100px;
+	background: white;
+	border: 2px solid $brand-green;
+	color: $brand-green;
+	border-radius: 10px;
+}
+
+.show-pagination-btn {
+	@include show-pagination-btn;
+}
+
+.show-pagination-btn:hover {
+	@include show-pagination-btn;
+}

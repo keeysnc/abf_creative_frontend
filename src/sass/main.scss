@@ -8,6 +8,8 @@
 @import "homepage";
 @import "footer";
 @import "nav";
+@import "show";
+@import "card";
 
 /* Global */
 h1,
@@ -25,18 +27,6 @@ a {
 
 #logo img {
 	width: 75px;
-}
-
-/* Navigation */
-
-nav {
-	.nav {
-		.nav-item {
-			.nav-link {
-				color: $brand-blue-gray;
-			}
-		}
-	}
 }
 
 /* Wrappers */

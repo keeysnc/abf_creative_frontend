@@ -1,9 +1,12 @@
+/* Navigation */
+
 nav {
 	justify-content: space-between;
+	.nav {
+		.nav-item {
+			.nav-link {
+				color: $brand-blue-gray;
+			}
+		}
+	}
 }
-
-// @media (max-width: 767.98px) {
-// 	nav {
-// 		justify-content: space-around;
-// 	}
-// }

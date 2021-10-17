@@ -1,0 +1,66 @@
+/* Card */
+
+#card {
+	flex-basis: 100%;
+	.card__item {
+		position: relative;
+		width: 100%;
+		margin-right: 20px;
+
+		> img {
+			width: 100%;
+		}
+
+		.card__item-caption {
+			display: flex;
+			justify-content: space-around;
+			position: absolute;
+			bottom: 10px;
+			.card__item-caption-meta {
+				color: $brand-white;
+				z-index: 99;
+				.card__item-caption-title {
+					font-weight: $font-bold;
+				}
+			}
+		}
+	}
+
+	.card__item-caption-detail,
+	.card__item-marker {
+		z-index: 99;
+	}
+
+	.card__item-caption-detail {
+		margin-left: 20px;
+		width: 70px;
+		height: 50px;
+	}
+
+	.card__item::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 40%;
+		left: 0;
+		bottom: 0;
+		opacity: 0.5;
+		border-radius: 10px;
+		z-index: 0;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(0deg, rgba(0, 0, 0, 1) 21%, rgba(0, 0, 0, 0) 100%);
+	}
+
+	.card__item:last-child {
+		padding-right: 0px;
+	}
+
+	.card__markers {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.card-marker {
+		z-index: 99;
+	}
+}

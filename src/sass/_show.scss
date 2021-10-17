@@ -1,0 +1,105 @@
+/* Toggle */
+#show {
+	.show-grid {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.show-grid__item {
+		width: 32%;
+		margin-bottom: 20px;
+	}
+
+	.show__filter {
+		display: flex;
+		align-items: end;
+
+		p {
+			margin-right: 40px;
+			font-weight: $font-bold;
+		}
+
+		.show__toggle {
+			background: $brand-white;
+			display: inline-block;
+			padding: 8px 16px;
+			border-radius: 50px;
+
+			p {
+				font-weight: $font-bold;
+			}
+
+			.btn {
+				color: $brand-light-gray;
+			}
+
+			.active {
+				background: $brand-light-purple;
+				color: white;
+				padding: 15px 30px;
+				border-radius: 50px;
+			}
+		}
+	}
+
+	.show__pagination {
+		display: flex;
+		justify-content: space-around;
+
+		.show__pagination--previous,
+		.show__pagination--next {
+			@include show-pagination-btn;
+		}
+
+		.show__pagination--previous img {
+			padding-right: 10px;
+		}
+
+		.show__pagination--next img {
+			padding-left: 10px;
+		}
+
+		ul {
+			display: flex;
+			padding-left: 0;
+			li {
+				@include show-pagination-btn;
+				margin-right: 10px;
+				list-style: none;
+				width: 50px;
+				height: 50px;
+				padding: 15px;
+				text-align: center;
+			}
+			li:last-child {
+				margin-right: 0;
+			}
+			li:hover {
+				background: $brand-green;
+				color: white;
+			}
+		}
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+	#show {
+		.show-grid__item {
+			width: 49%;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	#show {
+		.show-grid__item {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+	}
+}

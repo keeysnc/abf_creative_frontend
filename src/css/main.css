@@ -86,6 +86,46 @@
   color: #010737;
 }
 
+/* Card Button */
+.card-btn {
+  background: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #010737;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-btn:hover {
+  background: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #010737;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Show Pagination Button */
+.show-pagination-btn {
+  height: 50px;
+  width: 100px;
+  background: white;
+  border: 2px solid #4e766d;
+  color: #4e766d;
+  border-radius: 10px;
+}
+
+.show-pagination-btn:hover {
+  height: 50px;
+  width: 100px;
+  background: white;
+  border: 2px solid #4e766d;
+  color: #4e766d;
+  border-radius: 10px;
+}
+
 /* Hero */
 #hero .hero__title--highlight {
   color: #c14742;
@@ -289,8 +329,164 @@
     padding-left: 0;
   }
 }
+/* Navigation */
 nav {
   justify-content: space-between;
+}
+nav .nav .nav-item .nav-link {
+  color: #555a8c;
+}
+
+/* Toggle */
+#show .show-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#show .show-grid__item {
+  width: 32%;
+  margin-bottom: 20px;
+}
+#show .show__filter {
+  display: flex;
+  align-items: end;
+}
+#show .show__filter p {
+  margin-right: 40px;
+  font-weight: 700;
+}
+#show .show__filter .show__toggle {
+  background: #f6f7fb;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+#show .show__filter .show__toggle p {
+  font-weight: 700;
+}
+#show .show__filter .show__toggle .btn {
+  color: #a5a5a5;
+}
+#show .show__filter .show__toggle .active {
+  background: #2a3071;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+#show .show__pagination {
+  display: flex;
+  justify-content: space-around;
+}
+#show .show__pagination .show__pagination--previous,
+#show .show__pagination .show__pagination--next {
+  height: 50px;
+  width: 100px;
+  background: white;
+  border: 2px solid #4e766d;
+  color: #4e766d;
+  border-radius: 10px;
+}
+#show .show__pagination .show__pagination--previous img {
+  padding-right: 10px;
+}
+#show .show__pagination .show__pagination--next img {
+  padding-left: 10px;
+}
+#show .show__pagination ul {
+  display: flex;
+  padding-left: 0;
+}
+#show .show__pagination ul li {
+  height: 50px;
+  width: 100px;
+  background: white;
+  border: 2px solid #4e766d;
+  color: #4e766d;
+  border-radius: 10px;
+  margin-right: 10px;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+}
+#show .show__pagination ul li:last-child {
+  margin-right: 0;
+}
+#show .show__pagination ul li:hover {
+  background: #4e766d;
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  #show .show-grid__item {
+    width: 49%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  #show .show-grid__item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+/* Card */
+#card {
+  flex-basis: 100%;
+}
+#card .card__item {
+  position: relative;
+  width: 100%;
+  margin-right: 20px;
+}
+#card .card__item > img {
+  width: 100%;
+}
+#card .card__item .card__item-caption {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 10px;
+}
+#card .card__item .card__item-caption .card__item-caption-meta {
+  color: #f6f7fb;
+  z-index: 99;
+}
+#card .card__item .card__item-caption .card__item-caption-meta .card__item-caption-title {
+  font-weight: 700;
+}
+#card .card__item-caption-detail,
+#card .card__item-marker {
+  z-index: 99;
+}
+#card .card__item-caption-detail {
+  margin-left: 20px;
+  width: 70px;
+  height: 50px;
+}
+#card .card__item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  left: 0;
+  bottom: 0;
+  opacity: 0.5;
+  border-radius: 10px;
+  z-index: 0;
+  background: black;
+  background: linear-gradient(0deg, black 21%, rgba(0, 0, 0, 0) 100%);
+}
+#card .card__item:last-child {
+  padding-right: 0px;
+}
+#card .card__markers {
+  width: 100%;
+  justify-content: center;
+}
+#card .card-marker {
+  z-index: 99;
 }
 
 /* Global */
@@ -309,11 +505,6 @@ a {
 
 #logo img {
   width: 75px;
-}
-
-/* Navigation */
-nav .nav .nav-item .nav-link {
-  color: #555a8c;
 }
 
 /* Wrappers */
