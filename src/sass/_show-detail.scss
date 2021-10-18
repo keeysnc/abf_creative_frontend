@@ -1,0 +1,39 @@
+.hero-bg {
+	background: url("../img/show-detail-hero.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.show-detail-contact {
+	background: $brand-light-yellow;
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.audio-player {
+	.audio-player__metadata {
+		display: flex;
+		.audio-player__metadata-text {
+			:first-child {
+				font-weight: $font-bold;
+			}
+		}
+	}
+}
+
+.show-detail-contact__metadata {
+	display: flex;
+	align-items: center;
+
+	.show-detail-contact__info {
+		margin-left: 20px;
+		.show-detail-contact__name {
+			font-weight: $font-bold;
+		}
+		.show-detail-contact__email-icon img {
+			margin-right: 10px;
+		}
+	}
+}

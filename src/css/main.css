@@ -489,6 +489,57 @@ nav .nav .nav-item .nav-link {
   z-index: 99;
 }
 
+.hero-bg {
+  background: url("../img/show-detail-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.show-detail-contact {
+  background: #f1e5d5;
+}
+.show-detail-contact p {
+  margin-bottom: 0;
+}
+
+.audio-player .audio-player__metadata {
+  display: flex;
+}
+.audio-player .audio-player__metadata .audio-player__metadata-text :first-child {
+  font-weight: 700;
+}
+
+.show-detail-contact__metadata {
+  display: flex;
+  align-items: center;
+}
+.show-detail-contact__metadata .show-detail-contact__info {
+  margin-left: 20px;
+}
+.show-detail-contact__metadata .show-detail-contact__info .show-detail-contact__name {
+  font-weight: 700;
+}
+.show-detail-contact__metadata .show-detail-contact__info .show-detail-contact__email-icon img {
+  margin-right: 10px;
+}
+
+#detail {
+  min-height: 800px;
+  height: 800px;
+}
+#detail .detail-hero {
+  display: flex;
+}
+#detail p {
+  margin-bottom: 0;
+}
+#detail .detail-hero__social {
+  padding: 30px 0 30px 0;
+}
+#detail .detail-hero__social img {
+  padding-right: 10px;
+}
+
 /* Global */
 h1,
 h2 {

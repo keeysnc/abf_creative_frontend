@@ -1,0 +1,20 @@
+#detail {
+	min-height: 800px;
+	height: 800px;
+
+	.detail-hero {
+		display: flex;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.detail-hero__social {
+		padding: 30px 0 30px 0;
+
+		img {
+			padding-right: 10px;
+		}
+	}
+}
