@@ -111,7 +111,7 @@
 .show-pagination-btn {
   height: 50px;
   width: 120px;
-  background: white;
+  background: transparent;
   border: 1px solid #4e766d;
   color: #4e766d;
   border-radius: 10px;
@@ -120,12 +120,58 @@
 .show-pagination-btn:hover {
   height: 50px;
   width: 120px;
-  background: white;
+  background: transparent;
   border: 1px solid #4e766d;
   color: #4e766d;
   border-radius: 10px;
 }
 
+.pagination {
+  display: flex;
+  justify-content: space-around;
+}
+.pagination .pagination--previous,
+.pagination .pagination--next {
+  height: 50px;
+  width: 120px;
+  background: transparent;
+  border: 1px solid #4e766d;
+  color: #4e766d;
+  border-radius: 10px;
+}
+.pagination .pagination--previous img {
+  padding-right: 10px;
+}
+.pagination .pagination--next img {
+  padding-left: 10px;
+}
+.pagination ul {
+  display: flex;
+  padding-left: 0;
+}
+.pagination ul li {
+  height: 50px;
+  width: 120px;
+  background: transparent;
+  border: 1px solid #4e766d;
+  color: #4e766d;
+  border-radius: 10px;
+  margin-right: 10px;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+}
+.pagination ul li:last-child {
+  margin-right: 0;
+}
+.pagination ul li:hover {
+  background: #4e766d;
+  color: white;
+}
+
+/* Post Category Colors */
 /* Hero */
 #hero .hero__title--highlight {
   color: #c14742;
@@ -374,50 +420,6 @@ nav .nav .nav-item .nav-link {
   padding: 15px 30px;
   border-radius: 50px;
 }
-#show .show__pagination {
-  display: flex;
-  justify-content: space-around;
-}
-#show .show__pagination .show__pagination--previous,
-#show .show__pagination .show__pagination--next {
-  height: 50px;
-  width: 120px;
-  background: white;
-  border: 1px solid #4e766d;
-  color: #4e766d;
-  border-radius: 10px;
-}
-#show .show__pagination .show__pagination--previous img {
-  padding-right: 10px;
-}
-#show .show__pagination .show__pagination--next img {
-  padding-left: 10px;
-}
-#show .show__pagination ul {
-  display: flex;
-  padding-left: 0;
-}
-#show .show__pagination ul li {
-  height: 50px;
-  width: 120px;
-  background: white;
-  border: 1px solid #4e766d;
-  color: #4e766d;
-  border-radius: 10px;
-  margin-right: 10px;
-  list-style: none;
-  width: 50px;
-  height: 50px;
-  padding: 15px;
-  text-align: center;
-}
-#show .show__pagination ul li:last-child {
-  margin-right: 0;
-}
-#show .show__pagination ul li:hover {
-  background: #4e766d;
-  color: white;
-}
 
 @media (max-width: 991.98px) {
   #show .show-grid__item {
@@ -538,6 +540,69 @@ nav .nav .nav-item .nav-link {
 }
 #detail .detail-hero__social img {
   padding-right: 10px;
+}
+
+#news-bg {
+  background: rgba(239, 241, 255, 0.5);
+}
+
+#news {
+  /* Sidebar */
+}
+#news .news__posts {
+  display: flex;
+  flex-direction: column;
+}
+#news .news__posts .news__post {
+  align-items: center;
+  background: white;
+}
+#news .news__posts .news__post .news__post-content {
+  /* Category Label Colors */
+}
+#news .news__posts .news__post .news__post-content h3 {
+  font-family: "Poppins", sans-serif;
+  color: #010737;
+}
+#news .news__posts .news__post .news__post-content .news__post-content-category {
+  padding: 10px;
+  color: white;
+  display: inline;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+#news .news__posts .news__post .news__post-content .news {
+  background: #c14742;
+}
+#news .news__posts .news__post .news__post-content .podcasts-tips {
+  background: #4e766d;
+}
+#news .news__posts .news__post .news__post-content .podcasts-tips2 {
+  background: #010737;
+}
+#news .news__posts .news__post .news__post-content-metadata {
+  font-weight: 700;
+}
+#news .news__posts .news__post .news__post-content-metadata span {
+  color: #010737;
+}
+#news .news__sidebar .news__sidebar-recent-post {
+  align-items: center;
+}
+#news .news__sidebar .news__sidebar-recent-post .news__sidebar-recent-post-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+#news .news__sidebar .news__sidebar-recent-post .news__sidebar-recent-post-content {
+  font-weight: 700;
+}
+#news .news__sidebar .news__sidebar-category-list ul {
+  padding-left: 0;
+}
+#news .news__sidebar .news__sidebar-category-list .news__sidebar-category-item {
+  list-style: none;
+  padding-bottom: 20px;
+  font-weight: 700;
 }
 
 /* Global */

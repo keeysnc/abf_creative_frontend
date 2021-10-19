@@ -1,0 +1,72 @@
+#news-bg {
+	background: rgba(239, 241, 255, 0.5);
+}
+#news {
+	.news__posts {
+		display: flex;
+		flex-direction: column;
+		.news__post {
+			align-items: center;
+			background: white;
+			.news__post-content {
+				h3 {
+					font-family: $primary-font;
+					color: $brand-blue;
+				}
+				.news__post-content-category {
+					padding: 10px;
+					color: white;
+					display: inline;
+					border-radius: 5px;
+					margin-bottom: 20px;
+				}
+
+				/* Category Label Colors */
+				.news {
+					background: $news-category;
+				}
+
+				.podcasts-tips {
+					background: $podcasts-tips-category;
+				}
+
+				.podcasts-tips2 {
+					background: $podcasts-tips-category2;
+				}
+			}
+			.news__post-content-metadata {
+				font-weight: $font-bold;
+				span {
+					color: $brand-blue;
+				}
+			}
+		}
+	}
+
+	/* Sidebar */
+	.news__sidebar {
+		.news__sidebar-recent-post {
+			align-items: center;
+			.news__sidebar-recent-post-image {
+				img {
+					width: 100%;
+					border-radius: 10px;
+				}
+			}
+			.news__sidebar-recent-post-content {
+				font-weight: $font-bold;
+			}
+		}
+
+		.news__sidebar-category-list {
+			ul {
+				padding-left: 0;
+			}
+			.news__sidebar-category-item {
+				list-style: none;
+				padding-bottom: 20px;
+				font-weight: $font-bold;
+			}
+		}
+	}
+}
