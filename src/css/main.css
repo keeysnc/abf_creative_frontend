@@ -777,6 +777,26 @@ nav .nav .nav-item .nav-link {
   opacity: 1;
   margin-right: 10px;
 }
+#careers .careers-filter__form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Remove default arrow */
+  background-image: url("../img/select-caret.png");
+  /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 170px;
+  position: relative;
+}
+#careers .careers-filter__form select:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: black;
+  z-index: 99;
+}
 #careers .careers-filter__form .careers-filter__form-location {
   width: 100%;
 }
@@ -791,6 +811,31 @@ nav .nav .nav-item .nav-link {
   #careers .careers-grid .careers-grid__item {
     width: 100%;
     margin-bottom: 15px;
+  }
+}
+#careers-detail .careers-detail__hero .careers-detail__hero-metadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#careers-detail .careers-detail__hero .careers-detail__hero-metadata .careers-detail__hero-metadata-text {
+  display: flex;
+}
+#careers-detail .careers-detail__hero .careers-detail__hero-metadata .careers-detail__hero-metadata-text p {
+  padding-right: 20px;
+}
+
+@media (max-width: 991.98px) {
+  #careers-detail .careers-detail__hero .careers-detail__hero-metadata {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 100%;
+  }
+  #careers-detail .careers-detail__hero .careers-detail__hero-metadata .careers-detail__hero-metadata-text {
+    flex-direction: column;
   }
 }
 /* Global */

@@ -97,6 +97,32 @@
 			opacity: 1;
 			margin-right: 10px;
 		}
+
+		select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none; /* Remove default arrow */
+			background-image: url("../img/select-caret.png"); /* Add custom arrow */
+			background-repeat: no-repeat;
+			background-position: right;
+			background-position-x: 170px;
+			position: relative;
+		}
+
+		select:after {
+			content: "";
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			// -webkit-appearance: none;
+			// -moz-appearance: none;
+			// appearance: none; /* Remove default arrow */
+			// background-image: url("../img/select-caret.png"); /* Add custom arrow */
+			// background-position: right;
+			background: black;
+			z-index: 99;
+		}
+
 		.careers-filter__form-location {
 			width: 100%;
 		}
