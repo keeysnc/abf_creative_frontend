@@ -838,6 +838,10 @@ nav .nav .nav-item .nav-link {
     flex-direction: column;
   }
 }
+#contact-bg {
+  background: #fff3f3;
+}
+
 /* Global */
 h1,
 h2 {
