@@ -171,6 +171,20 @@
   color: white;
 }
 
+#graphics-wrapper {
+  position: relative;
+}
+#graphics-wrapper .red-circle-graphic {
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+#graphics-wrapper .yellow-circle-graphic {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+}
+
 /* Post Category Colors */
 /* Hero */
 #hero .hero__title--highlight {
@@ -186,6 +200,9 @@
 }
 
 /* Features */
+#features {
+  position: relative;
+}
 #features .feature__image img {
   width: 100%;
   position: relative;
@@ -840,6 +857,10 @@ nav .nav .nav-item .nav-link {
 }
 #contact-bg {
   background: #fff3f3;
+}
+
+.episode #graphics-wrapper .container {
+  height: 550px;
 }
 
 /* Global */

@@ -1,0 +1,15 @@
+#graphics-wrapper {
+	position: relative;
+
+	.red-circle-graphic {
+		position: absolute;
+		right: 0;
+		top: 10%;
+	}
+
+	.yellow-circle-graphic {
+		position: absolute;
+		left: 0;
+		bottom: 10%;
+	}
+}
